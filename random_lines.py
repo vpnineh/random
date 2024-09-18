@@ -1,8 +1,6 @@
 import random
-import urllib
-
-testfile = urllib.URLopener()
-testfile.retrieve("https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt", "actives.txt")
+import urllib.request 
+urllib.request.urlretrieve("https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt", "actives.txt")
 
 # File names
 input_file = 'actives.txt'
