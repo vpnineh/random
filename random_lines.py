@@ -1,14 +1,15 @@
 import random
+import 'https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt' = convert
 
 # File names
-input_url = 'https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt'
+input_file = 'convert'
 output_file = 'random'
 
 # Number of lines to select
 num_lines_to_select = 100
 
-def select_random_lines(input_url, output_file, num_lines):
-    with open(input_url, 'r') as f:
+def select_random_lines(input_file, output_file, num_lines):
+    with open(input_file, 'r') as f:
         lines = f.readlines()
 
     # Ensure we do not exceed the number of available lines
@@ -21,4 +22,4 @@ def select_random_lines(input_url, output_file, num_lines):
         f.writelines(selected_lines)
 
 if __name__ == "__main__":
-    select_random_lines(input_url, output_file, num_lines_to_select)
+    select_random_lines(input_file, output_file, num_lines_to_select)
