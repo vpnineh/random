@@ -1,8 +1,11 @@
 import random
-import 'https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt' = convert
+import urllib
+
+testfile = urllib.URLopener()
+testfile.retrieve("https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt", "actives.txt")
 
 # File names
-input_file = 'convert'
+input_file = 'actives.txt'
 output_file = 'random'
 
 # Number of lines to select
