@@ -38,6 +38,22 @@ search_word = '@v2ray_configs_pool'
 replace_word = '@VPNineh'
 search_and_replace(file_path, search_word, replace_word)
 
+def search_and_replace(file_path, search_word, replace_word):
+   with open(file_path, 'r') as file:
+      file_contents = file.read()
+
+      updated_contents = file_contents.replace(search_word, replace_word)
+
+   with open(file_path, 'w') as file:
+      file.write(updated_contents)
+
+# Example usage
+file_path = 'merged.txt'
+search_word = '@Surfboardv2ray'
+replace_word = '@VPNineh'
+search_and_replace(file_path, search_word, replace_word)
+
+
 # File names
 input_file = 'merged.txt'
 output_file = 'random'
