@@ -1,9 +1,31 @@
 import random
 import urllib.request 
 urllib.request.urlretrieve("https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt", "actives.txt")
+urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/output/converted.txt", "actives2.txt")
+
+# Open the source text files
+file1 = open('actives.txt', 'r')
+file2 = open('actives2.txt', 'r')
+
+# Read the contents of the text files
+content1 = file1.read()
+content2 = file2.read()
+
+# Close the source text files
+file1.close()
+file2.close()
+
+# Open the destination file
+destination_file = open('merged.txt', 'w')
+
+# Write the concatenated content to the destination file
+destination_file.write(content1 + content2)
+# Close the destination file
+destination_file.close()
+
 
 # File names
-input_file = 'actives.txt'
+input_file = 'merged.txt'
 output_file = 'random'
 
 # Number of lines to select
