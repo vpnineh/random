@@ -1,7 +1,7 @@
 import random
 import urllib.request 
 urllib.request.urlretrieve("https://raw.githubusercontent.com/vpnineh/sub/main/go", "actives.txt")
-urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/output/converted.txt", "actives2.txt")
+urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/output/US.txt", "actives2.txt")
 
 # Open the source text files
 file1 = open('actives.txt', 'r')
