@@ -1,6 +1,6 @@
 import random
 import urllib.request 
-urllib.request.urlretrieve("https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt", "actives.txt")
+urllib.request.urlretrieve("https://raw.githubusercontent.com/vpnineh/sub/main/go", "actives.txt")
 urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/output/converted.txt", "actives2.txt")
 
 # Open the source text files
