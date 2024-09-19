@@ -23,20 +23,25 @@ destination_file.write(content1 + content2)
 # Close the destination file
 destination_file.close()
 
+# Search and Remark
+
 def search_and_replace(file_path, search_word, replace_word):
    with open(file_path, 'r') as file:
       file_contents = file.read()
 
       updated_contents = file_contents.replace(search_word, replace_word)
-
+      updated_contents = file_contents.replace(search_word2, replace_word)
+      
    with open(file_path, 'w') as file:
       file.write(updated_contents)
 
-# Example usage
 file_path = 'merged.txt'
 search_word = '@v2ray_configs_pool'
+search_word2 = '@Surfboardv2ray'
 replace_word = '@VPNineh'
-search_and_replace(file_path, search_word, replace_word)
+search_and_replace(file_path, search_word, search_word2, replace_word)
+
+# End Of Search and Remark
 
 # File names
 input_file = 'merged.txt'
