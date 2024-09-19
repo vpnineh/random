@@ -37,13 +37,6 @@ for line in f1:
 f1.close()
 f2.close()
 
-
-# Example usage
-file_path = 'merged.txt'
-search_word = '@v2ray_configs_pool'
-replace_word = '@VPNineh'
-search_and_replace(file_path, search_word, replace_word)
-
 # File names
 input_file = 'merged.txt'
 output_file = 'random'
