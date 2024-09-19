@@ -2,24 +2,28 @@ import random
 import urllib.request 
 urllib.request.urlretrieve("https://raw.githubusercontent.com/vpnineh/test/main/output", "actives.txt")
 urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/output/US.txt", "actives2.txt")
+urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/ws_tls/proxies/wstls", "actives3.txt")
 
 # Open the source text files
 file1 = open('actives.txt', 'r')
 file2 = open('actives2.txt', 'r')
+file3 = open('actives3.txt', 'r')
 
 # Read the contents of the text files
 content1 = file1.read()
 content2 = file2.read()
+content3 = file3.read()
 
 # Close the source text files
 file1.close()
 file2.close()
+file3.close()
 
 # Open the destination file
 destination_file = open('merged.txt', 'w')
 
 # Write the concatenated content to the destination file
-destination_file.write(content1 + content2)
+destination_file.write(content1 + content2 + content3)
 # Close the destination file
 destination_file.close()
 
