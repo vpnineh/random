@@ -1,9 +1,9 @@
 import random
 import urllib.request 
-urllib.request.urlretrieve("https://raw.githubusercontent.com/vpnineh/test/main/output", "actives.txt")
+urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/refs/heads/main/output/converted.txt", "actives.txt")
 urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/output/US.txt", "actives2.txt")
 urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/ws_tls/proxies/wstls", "actives3.txt")
-urllib.request.urlretrieve("https://raw.githubusercontent.com/vpnineh/sub/refs/heads/main/main", "actives4.txt")
+urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/refs/heads/main/custom/mahsa.txt", "actives4.txt")
 
 # Open the source text files
 file1 = open('actives.txt', 'r')
