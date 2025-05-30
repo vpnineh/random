@@ -1,7 +1,7 @@
 import random
 import urllib.request 
-urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/refs/heads/main/output/converted.txt", "actives.txt")
-urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/output/US.txt", "actives2.txt")
+urllib.request.urlretrieve("github.com/soroushmirzaei/telegram-configs-collector/raw/refs/heads/main/protocols/hysteria", "actives.txt")
+urllib.request.urlretrieve("https://github.com/soroushmirzaei/telegram-configs-collector/raw/refs/heads/main/protocols/vmess", "actives2.txt")
 urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/ws_tls/proxies/wstls", "actives3.txt")
 urllib.request.urlretrieve("https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/refs/heads/main/custom/mahsa.txt", "actives4.txt")
 
